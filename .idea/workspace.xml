@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7401a25f-4357-4c13-95d5-fd475c760781" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/komikun/Assembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/komikun/Assembler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data.asm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.asm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/komikun/Assembler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/komikun/Assembler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/komikun/IOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/komikun/IOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/komikun/JOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/komikun/JOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/komikun/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/komikun/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/komikun/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/komikun/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/komikun/ROrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/komikun/ROrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/komikun/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/komikun/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data.asm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.asm" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/komikun/Assembler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            <state relative-caret-position="941">
+              <caret line="390" column="6" selection-start-line="390" selection-start-column="6" selection-end-line="390" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
+            <state relative-caret-position="465">
               <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
             </state>
           </provider>
@@ -53,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/data.asm">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -89,9 +78,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/cn/komikun/data.asm" />
-        <option value="$PROJECT_DIR$/src/main/resources/data.asm" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/data.asm" />
         <option value="$PROJECT_DIR$/src/main/java/cn/komikun/Assembler.java" />
       </list>
     </option>
@@ -122,7 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,7 +175,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,17 +251,18 @@
       <workItem from="1584063133372" duration="1219000" />
       <workItem from="1584066351826" duration="207000" />
       <workItem from="1584067112230" duration="7929000" />
+      <workItem from="1584083923679" duration="590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37038000" />
+    <option name="totallyTimeSpent" value="37628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27382874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27786753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -280,7 +270,7 @@
       <window_info id="Alibaba Cloud Explorer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25985402" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25985402" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -308,6 +298,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/komikun/Assembler.java</url>
+          <line>402</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0-sources.jar!/com/google/common/collect/Sets.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -330,13 +332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -346,15 +341,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
+        <state relative-caret-position="465">
           <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/komikun/Assembler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        <state relative-caret-position="941">
+          <caret line="390" column="6" selection-start-line="390" selection-start-column="6" selection-end-line="390" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

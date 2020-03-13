@@ -77,7 +77,7 @@ class Program {
             .transformOrder2Binary(orderName, Util.preprocess(list[2].toLowerCase()), this.PC,
                 this.labelMap);
       } else if (JOrder.isJOrder(orderName)) {
-        result = JOrder.transformOrder2Binary(orderName, Util.preprocess(list[2]), this.labelMap);
+        result = JOrder.transformOrder2Binary(orderName, Util.preprocess(list[2].toLowerCase()), this.labelMap);
       } else {
         result = null;
       }
