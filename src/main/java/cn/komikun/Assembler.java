@@ -194,44 +194,44 @@ class ROrder extends Order {
           if (registersMap.containsKey(rt)) {
             switch (orderName) {
               case "add":
-                return (0 << 26) | (32 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (32 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "addu":
-                return (0 << 26) | (33 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (33 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "sub":
-                return (0 << 26) | (34 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (34 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "subu":
-                return (0 << 26) | (35 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (35 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "slt":
-                return (0 << 26) | (42 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (42 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "sltu":
-                return (0 << 26) | (43 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (43 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "and":
-                return (0 << 26) | (36 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (36 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "or":
-                return (0 << 26) | (37 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (37 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "xor":
-                return (0 << 26) | (38 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (38 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "nor":
-                return (0 << 26) | (39 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (39 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "sllv":
-                return (0 << 26) | (4 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (4 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "srlv":
-                return (0 << 26) | (6 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (6 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
               case "srav":
-                return (0 << 26) | (7 & 63) | (registersMap.get(rs) << 11) | (registersMap.get(rt)
-                    << 21) | (registersMap.get(rd) << 16);
+                return (0 << 26) | (7 & 63) | (registersMap.get(rd) << 11) | (registersMap.get(rs)
+                    << 21) | (registersMap.get(rt) << 16);
             }
           } else if (Util.isNumber(rt)) {
             switch (orderName) {
