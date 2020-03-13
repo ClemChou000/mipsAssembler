@@ -60,34 +60,35 @@ class Program {
       String[] list = s.split(" ");
       // 0 -> label 1 -> orderName 2 -> para 3 -> comment
       Integer result = 0;
-      if (list.length == 1) {
-        return "Empty Order Name";
-      }
-      String orderName = list[1].toLowerCase();
-      if (ROrder.isROrder(orderName)) {
-        if (list.length < 3) {
-          result = ROrder.transformOrder2Binary(orderName, new ArrayList<String>());
+      if (list.length != 1) {
+        String orderName = list[1].toLowerCase();
+        if (ROrder.isROrder(orderName)) {
+          if (list.length < 3) {
+            result = ROrder.transformOrder2Binary(orderName, new ArrayList<String>());
+          } else {
+            result = ROrder
+                .transformOrder2Binary(orderName, Util.preprocess(list[2].toLowerCase()));
+          }
+        } else if (list.length < 3) {
+          result = null;
+        } else if (IOrder.isIOrder(orderName)) {
+          result = IOrder
+              .transformOrder2Binary(orderName, Util.preprocess(list[2].toLowerCase()), this.PC,
+                  this.labelMap);
+        } else if (JOrder.isJOrder(orderName)) {
+          result = JOrder.transformOrder2Binary(orderName, Util.preprocess(list[2].toLowerCase()),
+              this.labelMap);
         } else {
-          result = ROrder.transformOrder2Binary(orderName, Util.preprocess(list[2].toLowerCase()));
+          result = null;
         }
-      } else if (list.length < 3) {
-        result = null;
-      } else if (IOrder.isIOrder(orderName)) {
-        result = IOrder
-            .transformOrder2Binary(orderName, Util.preprocess(list[2].toLowerCase()), this.PC,
-                this.labelMap);
-      } else if (JOrder.isJOrder(orderName)) {
-        result = JOrder.transformOrder2Binary(orderName, Util.preprocess(list[2].toLowerCase()), this.labelMap);
-      } else {
-        result = null;
-      }
-      if (result != null) {
-        sb.append("[0x" + String.format("%08x", result) + "] ");
-        sb.append(list[1] + " " + list[2]);
-        sb.append("\n");
-      } else {
-        sb.append("illegal farmat:" + s);
-        sb.append("\n");
+        if (result != null) {
+          sb.append("[0x" + String.format("%08x", result) + "] ");
+          sb.append(list[1] + " " + list[2]);
+          sb.append("\n");
+        } else {
+          sb.append("illegal farmat:" + s);
+          sb.append("\n");
+        }
       }
 
     }
@@ -399,25 +400,23 @@ class JOrder extends Order {
 
   static Integer transformOrder2Binary(String orderName, List<String> paraList,
       Map<String, Integer> map) {
-    if (orderName.equals("j")) {
-      String label = paraList.get(0);
-      int address;
-      if (map.containsKey(label)) {
-        address = map.get(label);
-        return (2 << 26) | ((address) >> 1) & 0x3FFFFFF;
-      } else if (Util.isNumber(label)) {
-        return (2 << 26) | ((Util.str2Num(label)) >> 1) & 0x3FFFFFF;
-      } else {
-        return null;
-      }
-    } else if (orderName.equals("jal")) {
-      if (registersMap.containsKey(paraList.get(0))) {
-        return (3 << 26) | ((registersMap.get(paraList.get(0)) >> 1) & 0x3FFFFFF);
-      } else {
-        return null;
-      }
+
+    String label = paraList.get(0);
+    int address;
+    if (map.containsKey(label)) {
+      address = map.get(label);
+    } else if (Util.isNumber(label)) {
+      address = Util.str2Num(label);
+    } else {
+      return null;
     }
-    return null;
+    if (orderName.equals("j")) {
+      return (2 << 26) | ((address) >> 1) & 0x3FFFFFF;
+    } else if (orderName.equals("jal")) {
+      return (3 << 26) | (address >> 1) & 0x3FFFFFF;
+    } else {
+      return null;
+    }
   }
 }
 
